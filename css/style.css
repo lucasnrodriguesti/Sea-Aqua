@@ -66,6 +66,7 @@ nav a:active {
     position: absolute;
     top: 35px;
     right: 15px;
+    padding: 1px;
 }
 
 .txt-search {
@@ -247,7 +248,7 @@ footer p {
 
 /* Responsivo Notebook */
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 480px) {
     /* Header */
 
     header, .div-search, .txt-search, .btn-search, .footer-nav {
@@ -266,6 +267,7 @@ footer p {
 
     nav {
         position: static;
+        width: 948px;
     }
 
     nav li {
