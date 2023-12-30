@@ -247,7 +247,7 @@ footer p {
 
 /* Responsivo Notebook */
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1370px) {
     /* Header */
 
     header, .div-search, .txt-search, .btn-search, .footer-nav {
