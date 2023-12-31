@@ -1,17 +1,54 @@
 *{
     margin: 0;
     padding: 0;
-    border: border-box;
+}
+
+/* Personalização de Variáveis*/
+
+:root {
+
+    /* Início do Header */
+
+    --header-background: linear-gradient(aqua, blue, darkblue, black);
+
+    --nav-a: #FFFFFF;
+    --nav-a-hover: #FFE600;
+    --nav-a-active: #FF8C00;
+    --nav-a-outline: 5px solid rgba(241, 241, 241, 0.1);
+    
+    --div-search-background: #E0EEEE;
+    --div-search-border: solid 2px #5F9EA0;
+    --btn-seach: #5F9EA0;
+    --btn-search-hover: rgba(240, 217, 217, 0.15);
+
+    /* Fim do Header */
+    /* Início do Main */
+
+    --main-background: linear-gradient(black, darkblue, black);
+    --title-color: #9effe0;
+    --title-font-size: 40px;
+    --title-text-decoration: underline rgb(0, 60, 60);
+    --title-font-weight: bold;
+    --title-padding: 0 0 13px 15px;
+
+    --history-color: #FFFFFF;
+    --history-text-shadow: 2px 2px rgba(0, 0, 0, 1);
+    --history-font-size: 20px;
+
+    /* Início do footer */
+    --footer-background: black;
+    --footer-color: blue;
+
 }
 
 /* Cabeçalho */
 
 header {
-    background: linear-gradient(aqua, blue, darkblue, black);
+    background: var(--header-background);
     max-width: 100%;
 }
 
-.icon {
+.icon-peixe {
     position: relative;
     width: 1000px;
     margin: 0 auto;
@@ -23,11 +60,12 @@ header {
     to {left: -80px;}
 }
 
-.icon img {
+.icon-peixe {
     width: 80px;
 }
 
 nav {
+    width: auto;
     position: absolute;
     top: 45px;
     right: 403px;
@@ -41,26 +79,28 @@ nav li {
 nav a {
     font-size: 1.3em;
     text-transform: uppercase;
-    color: rgb(255 255 255);
+    color: var(--nav-a);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: rgb(255, 230, 0);
+    color: var(--nav-a-hover);
     cursor: pointer;
-    outline: 5px solid rgba(241, 241, 241, 0.1);
+    outline: var(--nav-a-outline);
     border-radius: 10px;
     transition: 70ms;
 }
 
 nav a:active {
-    color: darkorange;
+    color: var(--nav-a-active);
     transition: 100ms;
 }
 
+/* Caixa de Pesquisa do Header */
+
 .div-search {
-    background-color: #E0EEEE;
-    border: solid 2px #5F9EA0;
+    background-color: var(--div-search-background);
+    border: var(--div-search-border);
     border-radius: 10px;
     height: 32px;
     position: absolute;
@@ -86,12 +126,12 @@ nav a:active {
     border-radius: 0 7px 7px 0;
     width: 70px;
     font-weight: bold;
-    background: #5F9EA0;
+    background: var(--btn-seach);
 }
 
 .btn-search:hover {
     cursor: pointer;
-    background-color: rgba(240, 217, 217, 0.15);
+    background-color: var(--btn-search-hover);
     transition: 400ms;
 }
 
@@ -101,111 +141,62 @@ nav a:active {
 }
 
 .aquario {
-    width: 100%;
+    height: 100%;
 }
 
 
 /*Conteúdo*/
 
 main {
-    background: linear-gradient(black, darkblue, black);
+    background: var(--main-background);
 }
 
-.info-1 {
-    padding: 2em 0;
-    width: 940px;
-    height: 282px;   
-}
-
-.info-1 p strong {
+.info p strong {
     font-weight: bold;
 }
 
-.info-1 p em {
+.info p em {
     font-style: italic;
 }
 
-.info-2 {
-    padding: 2em 0;
-    width: 1300px;
-    height: 280px;   
-}
-
-.info-2 p strong {
-    font-weight: bold;
-}
-
-.info-2 p em {
-    font-style: italic;
-}
+/* Título */
 
 .titulo {
-    color: #9effe0;
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline rgb(0, 60, 60);
-    padding: 0 0 13px 15px;
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-decoration: var(--title-text-decoration);
+    padding: var(--title-padding);
     clear: left;
 }
 
 .titulo-2 {
-    color: #9effe0;
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline rgb(0, 60, 60);
-    text-align: right;
-    padding: 0 0 13px 15px;
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-decoration: var(--title-text-decoration);
+    padding: var(--padding-title);
     clear: right;
 }
 
-.titulo-3 {
-    color: #9effe0;
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline rgb(0, 60, 60);
-    padding: 0 0 13px 15px;
-    clear: left;
-}
-
-.titulo-4 {
-    color: #9effe0;
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline rgb(0, 60, 60);
-    text-align: right;
-    padding: 0 0 13px 15px;
-    clear: right;
-}
+/* História dos Animais */
 
 .historia {
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 1);
-    font-size: 20px;
+    color: var(--history-color);
+    text-shadow: var(--history-text-shadow);
+    font-size: var(--history-font-size);
     text-align: left;
 }
 
 .historia-2 {
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 1);
-    font-size: 20px;
+    color:var(--history-color);
+    text-shadow: var(--history-text-shadow);
+    font-size: var(--history-font-size);
     padding: 0 100px;
     text-align: right;
 }
 
-.historia-3 {
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 1);
-    font-size: 20px;
-    text-align: left;
-}
-
-.historia-4 {
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 1);
-    font-size: 20px;
-    padding: 0 100px;
-    text-align: right;
-}
+/* Imagens da Main */
 
 .tubarao-baleia {
     height: 250px;
@@ -234,16 +225,111 @@ main {
 /*footer*/
 
 footer {
-    background: black; /*url("../img/footer-edited.jpg");*/
+    background: var(--footer-background); /*url("../img/footer-edited.jpg");*/
     padding: 40px;
 }
 
 footer p {
-    color: blue;
+    color: var(--footer-color);
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     font-style: italic;
-    padding: 110px;
+    padding: 50px;
+}
+
+/* Responsivo para Mobile de até 320px */
+
+@media (max-width: 320px) {
+
+    body {
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Início da Header */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-peixe {
+        height: 120px ;
+        padding: 0 62px;
+        animation: mymove 4s infinite;
+    }
+
+    @keyframes mymove {
+        from {left: 200px;}
+        to {left: -20px;}
+    }
+
+    nav {
+       padding: 32px 0 0 0;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .div-search {
+        display: flex;
+        margin: 96px -5px 0 0px;
+    }
+
+    .div-search img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .txt-search {
+        text-align: center;
+    }
+
+    .btn-search {
+        width: auto;
+    }
+
+    .aquario {
+        height: auto;
+        padding: 0 0 15% 0;
+    }
+
+    /* Início da Main */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tubarao-baleia, .peixe-palhaco, .peixe-lua, .tartaruga-marinha {
+        height: auto;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer p {
+        padding: 35px;
+    }
+
 }
 
 /* Responsivo Notebook */
@@ -255,7 +341,7 @@ footer p {
         width: auto;
     }
 
-    .icon {
+    .icon-peixe {
         width: auto;
         margin: 0px 0px 20px 49px
     }
@@ -267,7 +353,7 @@ footer p {
 
     nav {
         position: static;
-        width: 948px;
+        width: auto;
     }
 
     nav li {
@@ -286,31 +372,16 @@ footer p {
     /*Conteúdo*/
 
     main {
-        padding: 0 0 1156px 0;
+        padding: auto;
     }
 
-    .info-1, .info-2 {
+    .info {
         width: 100%;
     }
 
-    .titulo, .titulo-2, .titulo-3, .titulo-4 {
+    .titulo, .titulo-2 {
         text-align: center;
-    }
-
-    .titulo {
-        margin: 0 0 8px 0;
-    }
-
-    .titulo-2 {
-        margin: 268px 0px -240px 0px;
-    }
-
-    .titulo-3 {
-        margin: 500px 0px -260px 0px;
-    }
-
-    .titulo-4 {
-        margin: 755px 0px -260px 0px;
+        margin: 5px;
     }
 
     .tubarao-baleia, .peixe-palhaco, .peixe-lua, .tartaruga-marinha {
@@ -320,42 +391,14 @@ footer p {
 
     /* Imagem */
     
-    .tubarao-baleia {
-        margin: 0 2px 8px 0px;
+    .tubarao-baleia, .peixe-lua, .peixe-palhaco, .tartaruga-marinha {
+        margin: auto;
     }
 
-    .peixe-lua {
-        margin: 240px 0px 8px 0px
-    }
-
-    .peixe-palhaco {
-        margin: 265px 0 8px 0;
-    }
-
-    .tartaruga-marinha {
-        margin: 265px 0 8px 0;
-    }
-
-    .historia {
+    .historia, .historia-2 {
         height: 100%;
         text-align: center;
-    }
-
-    .historia-2 {
-        height: 100%;
-        text-align: center;
-        padding: 8px 0px 0px 0px;
+        padding: 10px 0px 35px 0px;
     }
     
-    .historia-3 {
-        height: 100%;
-        text-align: center;
-    } 
-    
-    .historia-4 {
-        height: 100%;
-        text-align: center;
-        padding: 8px 0px 0px 0px;
-    }
-
 }
