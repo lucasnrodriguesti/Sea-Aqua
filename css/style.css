@@ -283,7 +283,7 @@ footer p {
 
     .div-search {
         display: flex;
-        margin: 96px -5px 0 0px;
+        margin: 96px 15px 0 0;
     }
 
     .div-search img {
@@ -336,10 +336,6 @@ footer p {
 
 @media screen and (max-width: 480px) {
     /* Header */
-
-    header, .div-search, .txt-search, .btn-search, .footer-nav {
-        width: auto;
-    }
 
     .icon-peixe {
         width: auto;
