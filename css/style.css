@@ -14,7 +14,7 @@
     --nav-a: #FFFFFF;
     --nav-a-hover: #FFE600;
     --nav-a-active: #FF8C00;
-    --nav-a-outline: 5px solid rgba(241, 241, 241, 0.1);
+    --nav-a-outline: 5px solid rgba(241, 241, 241, 0.5);
     
     --div-search-background: #E0EEEE;
     --div-search-border: solid 2px #5F9EA0;
@@ -29,7 +29,6 @@
     --title-font-size: 40px;
     --title-text-decoration: underline rgb(0, 60, 60);
     --title-font-weight: bold;
-    --title-padding: 0 0 13px 15px;
 
     --history-color: #FFFFFF;
     --history-text-shadow: 2px 2px rgba(0, 0, 0, 1);
@@ -37,53 +36,57 @@
 
     /* Início do footer */
     --footer-background: black;
-    --footer-color: blue;
+    --footer-color: #FFE600;
 
 }
 
-/* Cabeçalho */
+/* Header */
 
 header {
-    background: var(--header-background);
-    max-width: 100%;
+    display: grid;
+    height: 80vh;
+    background-image: url(/img/aquario.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-.icon-peixe {
+/* .icon-peixe {
     position: relative;
-    width: 1000px;
-    margin: 0 auto;
-    animation: mymove 6s infinite;
+    animation: mymove 10s infinite;
 }
 
 @keyframes mymove {
-    from {left: 160px;}
-    to {left: -80px;}
+    from {left: 100%;}
+    to {left: 0.1em;}
 }
 
 .icon-peixe {
     width: 80px;
+} */
+
+/* Navigation */
+
+.div-nav {
+    text-align: center;
+    margin: 2.7em 25em;
 }
 
-nav {
-    width: auto;
-    position: absolute;
-    top: 45px;
-    right: 403px;
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 60px;
-}
-
-nav a {
+.list-link a {
     font-size: 1.3em;
     text-transform: uppercase;
     color: var(--nav-a);
     text-decoration: none;
 }
 
-nav a:hover {
+.list-link a:hover {
     color: var(--nav-a-hover);
     cursor: pointer;
     outline: var(--nav-a-outline);
@@ -91,12 +94,12 @@ nav a:hover {
     transition: 70ms;
 }
 
-nav a:active {
+.list-link a:active {
     color: var(--nav-a-active);
     transition: 100ms;
 }
 
-/* Caixa de Pesquisa do Header */
+/* Box Search of Header */
 
 .div-search {
     background-color: var(--div-search-background);
@@ -140,86 +143,69 @@ nav a:active {
     height: 30px;
 }
 
-.aquario {
-    height: 100%;
-}
-
-
-/*Conteúdo*/
+/*Main*/
 
 main {
     background: var(--main-background);
 }
 
-.info p strong {
+.div-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-content {
+    padding: 3em 0;
+}
+
+.div-info p strong {
     font-weight: bold;
 }
 
-.info p em {
+.div-info p em {
     font-style: italic;
 }
 
-/* Título */
+.info-main {
+    margin: 0 10em;
+    align-items: center;
+}
 
-.titulo {
+/* Title */
+
+.content-title {
     color: var(--title-color);
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     text-decoration: var(--title-text-decoration);
-    padding: var(--title-padding);
-    clear: left;
+    text-align: center;
 }
 
-.titulo-2 {
-    color: var(--title-color);
-    font-size: var(--title-font-size);
-    font-weight: var(--title-font-weight);
-    text-decoration: var(--title-text-decoration);
-    padding: var(--padding-title);
-    clear: right;
-}
+/* Animals History */
 
-/* História dos Animais */
-
-.historia {
+.content-history {
     color: var(--history-color);
     text-shadow: var(--history-text-shadow);
     font-size: var(--history-font-size);
-    text-align: left;
+    margin: 2em;
 }
 
-.historia-2 {
-    color:var(--history-color);
-    text-shadow: var(--history-text-shadow);
-    font-size: var(--history-font-size);
-    padding: 0 100px;
-    text-align: right;
-}
-
-/* Imagens da Main */
+/* Icon of Main */
 
 .tubarao-baleia {
     height: 250px;
-    float: left;
-    margin: 0 8px 0 55px;
 }
 
 .peixe-lua {
     height: 250px;
-    float: right;
-    margin: 0 47px 0 8px;
 }
 
 .peixe-palhaco {
     width: 390px;
-    float: left;
-    margin: 0 8px 0 55px;
 }
 
 .tartaruga-marinha {
     height: 255px;
-    float: right;
-    margin: 0 47px 0 8px;
 }
 
 /*footer*/
@@ -249,69 +235,82 @@ footer p {
     /* Início da Header */
 
     header {
+        height: 25vh;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .icon-peixe {
+    /* .icon-peixe {
         height: 120px ;
-        padding: 0 62px;
+        padding: 4px;
         animation: mymove 4s infinite;
     }
 
     @keyframes mymove {
-        from {left: 200px;}
-        to {left: -20px;}
-    }
+        from {left: 80%;}
+        to {left: -235px;}
+    } */
 
-    nav {
-       padding: 32px 0 0 0;
-    }
-
-    nav li {
+    .nav-list {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
+        margin: 3em 10em;
     }
 
-    nav a {
+    .list-link {
+        margin: 1em;
+    }
+
+    .list-link a {
         font-size: 10px;
     }
 
     .div-search {
+        background-color: var(--div-search-background);
+        border: var(--div-search-border);
+        border-radius: 10px;
         display: flex;
-        margin: 96px 15px 0 0;
+        margin: 40px -15px 0 0;
+        height: 15px;
     }
 
     .div-search img {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
     }
 
     .txt-search {
+        background-color: transparent;
+        font-size: 0.6em;
+        height: 15px;
+        width: 80px;
         text-align: center;
     }
 
     .btn-search {
+        background: var(--btn-seach);
         width: auto;
+        height: 16px;
+        border-radius: 0 7px 7px 0;
+        font-weight: bold;
+        
     }
 
-    .aquario {
+    /* .aquario {
         height: auto;
         padding: 0 0 15% 0;
-    }
+    } */
 
     /* Início da Main */
 
     main {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .info {
+    .div-info {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -334,7 +333,7 @@ footer p {
 
 /* Responsivo Notebook */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     /* Header */
 
     .icon-peixe {
@@ -371,7 +370,7 @@ footer p {
         padding: auto;
     }
 
-    .info {
+    .div-info {
         width: 100%;
     }
 

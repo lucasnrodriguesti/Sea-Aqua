@@ -10,17 +10,13 @@
     <body>
         <!--Cabeçalho-->
         <header>
-            
-            <img class="icon-peixe" src="img/favicon.png">
-            <!-- <div class="icon-peixe">
-                
-            </div> -->
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Contato</a></li>
+            <!-- <img class="icon-peixe" src="img/favicon.png"> -->
+            <nav class="div-nav">
+                <ul class="nav-list">
+                    <li class="list-link"><a href="#">Home</a></li>
+                    <li class="list-link"><a href="#">História</a></li>
+                    <li class="list-link"><a href="#">Notícias</a></li>
+                    <li class="list-link"><a href="#">Contato</a></li>
                 </ul>
             </nav>
             <div class="div-search">
@@ -28,49 +24,57 @@
                 <input class="txt-search" type="text" placeholder="Busque aqui">
                 <button class="btn-search">Buscar</button>
             </div>
-            <img class="aquario" src="img/aquario.jpg" alt="Aquário">
         </header>
 
         <main>
-
-            <section class="info">
-                <h2 class="titulo">Tubarão-Baleia</h2>
+            <!-- First Info-->
+            <section class="div-info info-main">
                 <img class="tubarao-baleia" src="img/tubarao-baleia.jpg" alt="Tubarão-Baleia">
-                <p class="historia">
-                    O <strong>tubarão-baleia</strong> (nome científico: <em>Rhincodon typus</em>) é uma espécie de tubarão filtrador da ordem dos orectolobiformes e a maior espécie de peixe existente conhecida. O maior indivíduo confirmado tinha um comprimento de 18,8 metros (61,7 pés). O tubarão-baleia detém muitos recordes de tamanho no reino animal, sendo de longe o maior vertebrado não mamífero vivo. É o único membro do gênero Rhincodon e o único membro existente da família dos rincodontídeos (<em>Rhincodontidae</em>), que pertence à subclasse dos elasmobrânquios (<em>Elasmobranchii</em>) na classe Chondrichthyes. Antes de 1984 foi classificado como Rhiniodon nos rinodontídeos (<em>Rhinodontidae</em>).
-                </p>
-            </section>
-
-            <section class="info">
-                <h2 class="titulo-2">Peixe Lua</h2>
-                <img class="peixe-lua" src="img/peixe-lua.jpg" alt="Peixe Lua">
-                <p class="historia-2">
-                    O <strong>peixe-lua</strong> (nome científico: <em>Mola mola</em>) é uma espécie de peixe ósseo pertencente à família Molidae. Se destaca por sua morfologia, que o difere dos demais peixes. É o peixe ósseo mais pesado do mundo e o mais pesado até hoje encontrado foram 2,7 toneladas, possui a mesma toxina que os baiacus, e não vive bem em cativeiro.
-                    <br><br>
-                    Recentemente, descobriu-se que o que se sabia em relação à sua locomoção estava errado, pois ele é um nadador ativo, não um organismo que vaga passivamente pelo oceano, como se acreditava.
+                <div class="info-content">
+                    <h2 class="content-title">Tubarão-Baleia</h2>
+                    <p class="content-history">
+                        O <strong>tubarão-baleia</strong> (nome científico: <em>Rhincodon typus</em>) é uma espécie de tubarão filtrador da ordem dos orectolobiformes e a maior espécie de peixe existente conhecida. O maior indivíduo confirmado tinha um comprimento de 18,8 metros (61,7 pés). O tubarão-baleia detém muitos recordes de tamanho no reino animal, sendo de longe o maior vertebrado não mamífero vivo. É o único membro do gênero Rhincodon e o único membro existente da família dos rincodontídeos (<em>Rhincodontidae</em>), que pertence à subclasse dos elasmobrânquios (<em>Elasmobranchii</em>) na classe Chondrichthyes. Antes de 1984 foi classificado como Rhiniodon nos rinodontídeos (<em>Rhinodontidae</em>).
                     </p>
+                </div>           
             </section>
-
-            <section class="info">
-                <h2 class="titulo">Amphiprion ocellaris</h2>
+            <!-- Second Info-->
+            <section class="div-info info-main">
+                <div class="info-content">
+                    <h2 class="content-title">Peixe Lua</h2>
+                    <p class="content-history">
+                        O <strong>peixe-lua</strong> (nome científico: <em>Mola mola</em>) é uma espécie de peixe ósseo pertencente à família Molidae. Se destaca por sua morfologia, que o difere dos demais peixes. É o peixe ósseo mais pesado do mundo e o mais pesado até hoje encontrado foram 2,7 toneladas, possui a mesma toxina que os baiacus, e não vive bem em cativeiro.
+                        <br><br>
+                        Recentemente, descobriu-se que o que se sabia em relação à sua locomoção estava errado, pois ele é um nadador ativo, não um organismo que vaga passivamente pelo oceano, como se acreditava.
+                    </p>
+                </div>
+                <img class="peixe-lua" src="img/peixe-lua.jpg" alt="Peixe Lua">
+            </section>
+            <!-- Third Info-->
+            <section class="div-info info-main">
                 <img class="peixe-palhaco" src="img/peixe-palhaco.jpg" alt="Peixe Palhaço">
-                <p class="historia">
-                    O <strong>peixe-palhaço-comum</strong> (<em>Amphiprion ocellaris</em>), também conhecido como falso-percula ou peixe-palhaço-do-oeste, devido à sua semelhança com o peixe-palhaço-percula, é um peixe-palhaço do gênero Amphiprion. À semelhança dos restantes peixes-palhaço, é protegido das células urticantes dos seus hospedeiros, as anêmonas-do-mar, por possuir um revestimento de muco protetor. Pode ser encontrado em lagunas calmas e pouco profundas, sendo o macho o guardião dos ovos.
-                    <br><br>
-                    A espécie é nativa dos Oceanos índico e Pacífico.
-                </p>
+                <div class="info-content">
+                    <h2 class="content-title">Amphiprion ocellaris</h2>
+                    <p class="content-history">
+                        O <strong>peixe-palhaço-comum</strong> (<em>Amphiprion ocellaris</em>), também conhecido como falso-percula ou peixe-palhaço-do-oeste, devido à sua semelhança com o peixe-palhaço-percula, é um peixe-palhaço do gênero Amphiprion. À semelhança dos restantes peixes-palhaço, é protegido das células urticantes dos seus hospedeiros, as anêmonas-do-mar, por possuir um revestimento de muco protetor. Pode ser encontrado em lagunas calmas e pouco profundas, sendo o macho o guardião dos ovos.
+                        <br><br>
+                        A espécie é nativa dos Oceanos índico e Pacífico.
+                    </p>
+                </div>
+                
             </section>
-
-            <section class="info">
-                <h2 class="titulo-2">Tartaruga-Marinha</h2>
+            <!-- 4 Info-->
+            <section class="div-info info-main">
+                <div class="info-content">
+                    <h2 class="content-title">Tartaruga-Marinha</h2>
+                    <p class="content-history">
+                        <strong>Tartaruga-marinha</strong> (<em>Cheloniidae</em>) é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.
+                        <br><br>
+                        A sobrevivência das tartarugas-marinhas continua em risco devido a muitos anos de caça intensiva pela sua carapaça, carne (utilizada para sopa) e gordura. Atualmente a caça está controlada, mas estes animais continuam ameaçados pelas redes de pesca que matam cerca de 40 000 exemplares por ano. Outra das maiores ameaças é o desenvolvimento costeiro nas áreas de nidificação, que impede as fêmeas de pôr os ovos e impossibilita a sua reprodução.
+                        <br><br>
+                        A maioria das espécies são migratórias e vagueiam pelos oceanos, orientando-se com a ajuda do campo magnético terrestre.
+                    </p>
+                </div>
                 <img class="tartaruga-marinha" src="img/tartaruga-marinha.jpg" alt="Tartaruga Marinha">
-                <p class="historia-2">
-                    <strong>Tartaruga-marinha</strong> (<em>Cheloniidae</em>) é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.
-                    <br><br>
-                    A sobrevivência das tartarugas-marinhas continua em risco devido a muitos anos de caça intensiva pela sua carapaça, carne (utilizada para sopa) e gordura. Atualmente a caça está controlada, mas estes animais continuam ameaçados pelas redes de pesca que matam cerca de 40 000 exemplares por ano. Outra das maiores ameaças é o desenvolvimento costeiro nas áreas de nidificação, que impede as fêmeas de pôr os ovos e impossibilita a sua reprodução.
-                    <br><br>
-                    A maioria das espécies são migratórias e vagueiam pelos oceanos, orientando-se com a ajuda do campo magnético terrestre.
-                </p>
             </section>
         </main>
         <!--Footer-->
