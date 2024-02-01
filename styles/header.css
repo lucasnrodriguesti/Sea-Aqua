@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    align-content: flex-start;
+    height: 55vh;
+    background-image: url(../img/aquario.jpg);
+    background-size: cover;
+}
+
+/* Navigation */
+
+.div-nav {
+    margin: 2.7em 25em;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.list-link .nav-list-link {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: var(--nav-a);
+    text-decoration: none;
+}
+
+.list-link .nav-list-link:hover {
+    color: var(--nav-a-hover);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 70ms;
+}
+
+.list-link .nav-list-link:active {
+    color: var(--nav-a-active);
+    transition: 100ms;
+}
+
+/* Box Search of Header */
+
+.div-search {
+    background-color: var(--div-search-background);
+    border: var(--div-search-border);
+    border-radius: 10px;
+    height: 32px;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    padding: 1px;
+}
+
+.txt-search {
+    float: left;
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    height: 32px;
+}
+
+.txt-search:hover {
+    background-color: var(--txt-search-hover);
+}
+
+.txt-search::placeholder {
+    background: url(../img/search-icon.png);
+}
+
+.btn-search {
+    border: none;
+    height: 32px;
+    border-radius: 0 7px 7px 0;
+    width: 70px;
+    font-weight: bold;
+    background: var(--btn-seach);
+}
+
+.btn-search:hover {
+    color: var(--btn-search-color-hover);
+    background-color: var(--btn-search-hover);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+@media screen and (max-width: 1024px) {
+    .div-nav {
+        margin: 3em 22em 0em 9em;
+    }
+}

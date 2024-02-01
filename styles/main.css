@@ -1,0 +1,82 @@
+main {
+    background: var(--main-background);
+}
+
+.div-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-content {
+    padding: 3em 0;
+}
+
+.div-info p strong {
+    font-weight: bold;
+}
+
+.div-info p em {
+    font-style: italic;
+}
+
+.info-main {
+    margin: 0 10em;
+    align-items: center;
+}
+
+/* Title */
+
+.content-title {
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-decoration: var(--title-text-decoration);
+    text-align: center;
+}
+
+/* Animals History */
+
+.content-history {
+    color: var(--history-color);
+    text-shadow: var(--history-text-shadow);
+    font-size: var(--history-font-size);
+    margin: 2em;
+}
+
+/* Icon of Main */
+
+.tubarao-baleia {
+    height: 250px;
+}
+
+.peixe-lua {
+    height: 250px;
+}
+
+.peixe-palhaco {
+    width: 390px;
+}
+
+.tartaruga-marinha {
+    height: 255px;
+}
+
+@media screen and (max-width: 1024px) {
+    .div-info {
+        width: 80%;
+    }
+
+    .titulo,
+    .titulo-2 {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .tubarao-baleia,
+    .peixe-palhaco,
+    .peixe-lua,
+    .tartaruga-marinha {
+        width: 100%;
+    }
+
+}
