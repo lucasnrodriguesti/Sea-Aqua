@@ -61,6 +61,11 @@ main {
     height: 255px;
 }
 
+.tubarao-baleia-response,
+.peixe-palhaco-response {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .div-info {
         width: 80%;
@@ -72,11 +77,72 @@ main {
         margin: 5px;
     }
 
+    .tubarao-baleia-response,
+    .peixe-palhaco-response {
+        display: none;
+    }
+
     .tubarao-baleia,
     .peixe-palhaco,
     .peixe-lua,
     .tartaruga-marinha {
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .div-info {
+        width: 75%;
+        display: contents;
+    }
+
+    .titulo,
+    .titulo-2 {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .tubarao-baleia,
+    .peixe-palhaco {
+        display: none;
+    }
+
+    .tubarao-baleia-response,
+    .peixe-palhaco-response,
+    .peixe-lua,
+    .tartaruga-marinha {
+        display: block;
+        width: 768px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    .div-info {
+        width: 75%;
+        display: contents;
+    }
+
+    .titulo,
+    .titulo-2 {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .tubarao-baleia,
+    .peixe-palhaco {
+        display: none;
+    }
+
+    .tubarao-baleia-response,
+    .peixe-palhaco-response,
+    .peixe-lua,
+    .tartaruga-marinha {
+        display: block;
+        width: 428px;
+        height: 260px;
     }
 
 }

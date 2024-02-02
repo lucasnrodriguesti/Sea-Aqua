@@ -7,16 +7,12 @@
 
     --header-background: linear-gradient(aqua, blue, darkblue, black);
 
-    --nav-a: #FFFFFF;
     --nav-a-hover: #FFE600;
-    --nav-a-active: #FF8C00;
 
-    --txt-search-hover: #CACACA;
     --div-search-background: #E0EEEE;
-    --div-search-border: solid 2px #5F9EA0;
-    --btn-seach: #5F9EA0;
-    --btn-search-hover: rgb(0, 194, 48);
-    --btn-search-color-hover: #FFFFFF;
+    --div-search-border: solid 5px #5F9EA0;
+    --btn-seach: #00C230;
+    --btn-search-color: #FFFFFF;
 
     /* Início do Main */
 

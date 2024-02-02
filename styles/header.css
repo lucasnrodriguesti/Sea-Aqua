@@ -1,89 +1,213 @@
 header {
     display: flex;
     align-content: flex-start;
-    height: 55vh;
+    height: 99vh;
     background-image: url(../img/aquario.jpg);
     background-size: cover;
 }
 
 /* Navigation */
 
-.div-nav {
-    margin: 2.7em 25em;
+.navigation-container {
+    margin: 9em 22em;
+
 }
 
-.nav-list {
+.navigation-list {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    justify-content: center;
 }
 
-.list-link .nav-list-link {
-    font-size: 1.3em;
+.list-item .nav-list-link {
+    display: flex;
+    margin-left: 1.2em;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 4px #2b008f;
+    font-size: 3em;
     text-transform: uppercase;
-    color: var(--nav-a);
     text-decoration: none;
 }
 
-.list-link .nav-list-link:hover {
+.list-item .nav-list-link:hover {
     color: var(--nav-a-hover);
     cursor: pointer;
     border-radius: 10px;
     transition: 70ms;
 }
 
-.list-link .nav-list-link:active {
-    color: var(--nav-a-active);
-    transition: 100ms;
-}
-
 /* Box Search of Header */
 
+/* 1° Box */
 .div-search {
     background-color: var(--div-search-background);
     border: var(--div-search-border);
-    border-radius: 10px;
-    height: 32px;
+    border-radius: 30px;
+    width: 40%;
+    height: 58px;
     position: absolute;
-    top: 35px;
-    right: 15px;
-    padding: 1px;
+    top: 300px;
+    left: 500px;
 }
 
+/* 2° Box */
 .txt-search {
-    float: left;
-    background-color: transparent;
-    font-size: 14px;
+    color: #000;
+    border-radius: 30px;
     border: none;
-    height: 32px;
-}
-
-.txt-search:hover {
-    background-color: var(--txt-search-hover);
+    width: 100%;
+    padding: 1.6em;
 }
 
 .txt-search::placeholder {
-    background: url(../img/search-icon.png);
+    font-size: 2.5em;
+    text-align: center;
+    background: url(../img/magnifying-glass-solid.svg) no-repeat;
 }
 
+/* 3° Box */
 .btn-search {
-    border: none;
-    height: 32px;
-    border-radius: 0 7px 7px 0;
-    width: 70px;
-    font-weight: bold;
     background: var(--btn-seach);
+    color: var(--btn-search-color);
+    border-radius: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+    width: 176px;
+    padding: 0.3em;
+    position: absolute;
+    top: -5px;
+    right: -4px;
 }
 
 .btn-search:hover {
-    color: var(--btn-search-color-hover);
-    background-color: var(--btn-search-hover);
     cursor: pointer;
     transition: 400ms;
 }
 
 @media screen and (max-width: 1024px) {
-    .div-nav {
-        margin: 3em 22em 0em 9em;
+    header {
+        height: 50vh;
+    }
+
+    .navigation-container {
+        margin: 9em 13em;
+    }
+
+    .list-item .nav-list-link {
+        margin-left: 1em;
+        font-size: 1.7em;
+    }
+
+    .div-search {
+        width: 60%;
+        height: 43px;
+        position: absolute;
+        top: 204px;
+        left: 185px;
+    }
+
+    .txt-search {
+        width: 90%;
+        height: 35px;
+        padding: 1.6em;
+    }
+
+    .txt-search::placeholder {
+        font-size: 1.2em;
+    }
+
+    .btn-search {
+        font-size: 1.2em;
+        font-weight: bold;
+        width: 115px;
+        padding: 0.5em;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 55vh;
+    }
+
+    .navigation-container {
+        margin: 8em 1.3em;
+    }
+
+    .list-item .nav-list-link {
+        margin-left: 2em;
+        font-size: 1.7em;
+    }
+
+    .div-search {
+        width: 75%;
+        height: 40px;
+        position: absolute;
+        top: 215px;
+        left: 84px;
+    }
+
+    .txt-search {
+        width: 90%;
+        height: 40px;
+        padding: 1.6em;
+    }
+
+    .txt-search::placeholder {
+        font-size: 1.2em;
+    }
+
+    .btn-search {
+        font-size: 1.2em;
+        font-weight: bold;
+        width: 115px;
+        padding: 0.5em;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    header {
+        height: 55vh;
+    }
+
+    .navigation-container {
+        margin: 8em 0em;
+    }
+
+    .list-item .nav-list-link {
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
+
+    .div-search {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        top: 215px;
+        left: 20px;
+    }
+
+    .txt-search {
+        width: 90%;
+        height: 40px;
+        padding: 1.6em;
+    }
+
+    .txt-search::placeholder {
+        font-size: 1.2em;
+    }
+
+    .btn-search {
+        font-size: 1.2em;
+        font-weight: bold;
+        width: 115px;
+        padding: 0.5em;
+        position: absolute;
+        top: -1px;
+        right: -1px;
     }
 }
