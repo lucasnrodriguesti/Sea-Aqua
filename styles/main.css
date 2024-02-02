@@ -121,7 +121,7 @@ main {
 
 @media screen and (max-width: 428px) {
     .div-info {
-        width: 75%;
+        width: 50%;
         display: contents;
     }
 

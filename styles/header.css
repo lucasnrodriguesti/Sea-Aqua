@@ -51,11 +51,13 @@ header {
 
 /* 2° Box */
 .txt-search {
+    background: transparent;
     color: #000;
     border-radius: 30px;
     border: none;
     width: 100%;
     padding: 1.6em;
+    text-align: center;
 }
 
 .txt-search::placeholder {
@@ -171,11 +173,11 @@ header {
 
 @media screen and (max-width: 428px) {
     header {
-        height: 55vh;
+        height: 45vh;
     }
 
     .navigation-container {
-        margin: 8em 0em;
+        margin: 4em 0em;
     }
 
     .list-item .nav-list-link {
@@ -184,30 +186,29 @@ header {
     }
 
     .div-search {
-        width: 90%;
-        height: 40px;
+        width: 50%;
+        height: 25px;
         position: absolute;
-        top: 215px;
-        left: 20px;
+        top: 95px;
+        left: 177px;
     }
 
     .txt-search {
-        width: 90%;
-        height: 40px;
-        padding: 1.6em;
+        width: 80%;
+        height: 25px;
+        padding: 0.2em;
     }
 
     .txt-search::placeholder {
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
 
     .btn-search {
-        font-size: 1.2em;
+        font-size: 0.5em;
         font-weight: bold;
-        width: 115px;
-        padding: 0.5em;
+        width: 68px;
+        padding: 0.9em 0em;
         position: absolute;
         top: -1px;
         right: -1px;
     }
-}
