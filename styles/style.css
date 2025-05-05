@@ -1,6 +1,6 @@
-@import url(styles/header.css);
-@import url(styles/main.css);
-@import url(styles/footer.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
 
 :root {
     /* Início do Header */
@@ -10,9 +10,9 @@
     --nav-a-hover: #FFE600;
 
     --div-search-background: #bbbbbb;
-    --div-search-border: solid 5px #005c28dc;
-    --btn-seach: #00C230;
+    --btn-seach: #7100c2;
     --btn-search-color: #FFFFFF;
+    --btn-search-border: solid 1px #ffffffdc;
 
     /* Início do Main */
 

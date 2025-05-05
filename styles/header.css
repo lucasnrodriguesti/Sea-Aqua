@@ -6,7 +6,7 @@ header {
     background-size: cover;
 }
 
-/* Navigation */
+/* Computador (1920x1080px)
 
 .navigation-container {
     margin: 9em 22em;
@@ -35,9 +35,6 @@ header {
     transition: 70ms;
 }
 
-/* Box Search of Header */
-
-/* 1° Box */
 .div-search {
     background-color: var(--div-search-background);
     border: var(--div-search-border);
@@ -49,7 +46,6 @@ header {
     left: 500px;
 }
 
-/* 2° Box */
 .txt-search {
     background: transparent;
     color: #000;
@@ -66,7 +62,6 @@ header {
     background: url(../img/magnifying-glass-solid.svg) no-repeat;
 }
 
-/* 3° Box */
 .btn-search {
     background: var(--btn-seach);
     color: var(--btn-search-color);
@@ -84,6 +79,89 @@ header {
     cursor: pointer;
     transition: 400ms;
 }
+
+*/
+
+header {
+    height: 45vh;
+}
+
+.navigation-container {
+    display: flex;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9em;
+
+    /* Posicionamento central
+    position: absolute;
+    left: 162px;
+    top: 40px; */
+}
+
+.list-item .nav-list-link {
+    margin-left: 2.4em;
+    font-size: 0.8rem;
+    display: flex;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 2px #2b008f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.list-item .nav-list-link:hover {
+    color: var(--nav-a-hover);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 70ms;
+}
+
+.div-search {
+    width: 36%;
+    height: 25px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.txt-search {
+    width: 57%;
+    height: 96%;
+}
+
+.txt-search::placeholder {
+    font-size: 0.5rem;
+    text-align: center;
+    /* background: url(../img/magnifying-glass-solid.svg) no-repeat;
+    background-size: 15px;
+    background-position-x: right;
+    background-position-y: center; */
+}
+
+.btn-search {
+    background: var(--btn-seach);
+    color: var(--btn-search-color);
+    border: var(--btn-search-border);
+    border-radius: 2px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    width: 68px;
+    padding: 0.9em 0em;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    transition: 400ms;
+}
+
+/*
 
 @media screen and (max-width: 1024px) {
     header {
@@ -128,7 +206,7 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1366px) {
     header {
         height: 55vh;
     }
@@ -171,45 +249,8 @@ header {
     }
 }
 
-@media screen and (max-width: 428px) {
-    header {
-        height: 45vh;
-    }
-
-    .navigation-container {
-        margin: 4em 0em;
-    }
-
-    .list-item .nav-list-link {
-        margin-left: 1em;
-        font-size: 1.2em;
-    }
-
-    .div-search {
-        width: 50%;
-        height: 25px;
-        position: absolute;
-        top: 95px;
-        left: 177px;
-    }
-
-    .txt-search {
-        width: 80%;
-        height: 25px;
-        padding: 0.2em;
-    }
-
-    .txt-search::placeholder {
-        font-size: 0.8em;
-    }
-
-    .btn-search {
-        font-size: 0.5em;
-        font-weight: bold;
-        width: 68px;
-        padding: 0.9em 0em;
-        position: absolute;
-        top: -1px;
-        right: -1px;
-    }
+@media screen and (min-width: 428px) {
+    
 }
+
+*/

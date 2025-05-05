@@ -1,6 +1,6 @@
-main {
-    background: var(--main-background);
-}
+/* Computador (1920x1080px) 
+
+
 
 .div-info {
     display: grid;
@@ -23,6 +23,45 @@ main {
     margin: 0 10em;
     align-items: center;
 }
+
+*/
+
+main {
+    background: var(--main-background);
+}
+
+.div-info {
+    width: 50%;
+    display: contents;
+}
+
+.info-content {
+    padding: 2em;
+}
+
+.content-title{
+    text-align: center;
+}
+
+
+/* caso precise pra recuperar
+
+.tubarao-baleia,
+.peixe-palhaco {
+    display: none;
+}
+
+*/
+
+
+.tubarao-baleia-response,
+.peixe-palhaco-response,
+.peixe-lua,
+.tartaruga-marinha {
+    width: 100%;
+    height: 260px;
+}
+
 
 /* Title */
 
@@ -61,11 +100,8 @@ main {
     height: 255px;
 }
 
-.tubarao-baleia-response,
-.peixe-palhaco-response {
-    display: none;
-}
 
+/*
 @media screen and (max-width: 1024px) {
     .div-info {
         width: 80%;
@@ -119,30 +155,4 @@ main {
 
 }
 
-@media screen and (max-width: 428px) {
-    .div-info {
-        width: 50%;
-        display: contents;
-    }
-
-    .titulo,
-    .titulo-2 {
-        text-align: center;
-        margin: 5px;
-    }
-
-    .tubarao-baleia,
-    .peixe-palhaco {
-        display: none;
-    }
-
-    .tubarao-baleia-response,
-    .peixe-palhaco-response,
-    .peixe-lua,
-    .tartaruga-marinha {
-        display: block;
-        width: 428px;
-        height: 260px;
-    }
-
-}
+*/
